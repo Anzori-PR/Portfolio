@@ -1,13 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Anzori Sakhelashvili</title>
 </head>
+
 <body>
-    
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Anzori </a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Projects</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#testmonial">Skills</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="burgerm">
+                <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor"
+                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">I am Anzori Sakhelashvili</span>
+            </h1>
+            <p class="header-subtitle">FRONTEND WEB DEVELOPER</p>
+
+            <button class="btn">Visit My Works</button>
+        </div>
+    </header>
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/me2.jpg" class="about-img" alt="My Image">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title">About Me</h2>
+                    <p>
+                        Junior Angular developer with strong skills in TypeScript, HTML, CSS, and
+                        JavaScript, as well as experience with Tailwind CSS for responsive design. I
+                        have developed several web applications focused on clean, user-friendly
+                        interfaces and cross-device compatibility. I am motivated to build efficient
+                        solutions and continuously take on new challenges to grow as a developer.
+                    </p>
+                    <button class="downloadbtn">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Did ?</p>
+            <h6 class="section-title mb-6">Projects</h6>
+
+            <div class="scroll-wrapper">
+                <button class="leftscroll">
+                    <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.75 19.5 8.25 12l7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+
+                <div class="project-scroll-container">
+                    <div class="project-scroll-track" id="scroll-track">
+                        <div class="project-card">
+                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 1">
+                            <h5>Project 1</h5>
+                            <p>Short description...</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 2">
+                            <h5>Project 2</h5>
+                            <p>Short description...</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 2">
+                            <h5>Project 2</h5>
+                            <p>Short description...</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 2">
+                            <h5>Project 2</h5>
+                            <p>Short description...</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 2">
+                            <h5>Project 2</h5>
+                            <p>Short description...</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 2">
+                            <h5>Project 2</h5>
+                            <p>Short description...</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 2">
+                            <h5>Project 2</h5>
+                            <p>Short description...</p>
+                        </div>
+                        <!-- Add more cards -->
+                    </div>
+                </div>
+
+                <button class="rightscroll">
+                    <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m8.25 4.5 7.5 7.5-7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section>
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div>
+
     <script src="app.js"></script>
 </body>
+
 </html>
