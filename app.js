@@ -1,5 +1,39 @@
 AOS.init();
 
+
+const navbar = document.querySelector('.custom-navbar');
+const navbarLogo = document.querySelector('.logo');
+const navbarLinks = document.querySelectorAll('.link');
+const burgerm = document.querySelector('.burgerm');
+const navbarHeight = 20;  // Adjust this value based on your navbar height;
+
+
+
+window.addEventListener('scroll', () => {
+    console.log(window.scrollY, navbarHeight);
+    if (window.scrollY > navbarHeight) {
+        navbar.style.backgroundColor = "white"
+        navbar.style.borderBottom = "1px solid rgba(222, 226, 230, 0.34)"
+        navbar.style.height = "65px"
+        navbarLogo.style.color = "#695aa6";
+        navbarLinks.forEach(link => {
+            link.style.color = "#6c757d";
+        });
+        burgerm.style.color = "#6c757d";
+    } else {
+        navbar.style = 'transparent';
+        navbar.style.height = "100px"
+        navbar.style.borderBottom = "none"
+        navbarLogo.style.color = "white";
+        navbarLinks.forEach(link => {
+          link.style.color = "White";
+      });
+        burgerm.style.color = "white";
+    }
+});
+
+
+
 const projects = [
     {
         name: "Project 1",
@@ -35,7 +69,6 @@ function startAutoScroll() {
   autoScrollInterval = setInterval(() => {
     scrollContainer.scrollLeft += 1;
 
-    // Reset scroll when halfway (original width)
     if (scrollContainer.scrollLeft >= scrollTrack.scrollWidth / 2) {
       scrollContainer.scrollLeft = 0;
     }

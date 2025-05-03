@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Anzori Sakhelashvili</title>
 </head>
 
 <body>
     <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+    <nav class="custom-navbar" data-aos="fade-down" data-aos-duration="1000">
         <div class="container">
             <a class="logo" href="#">Anzori </a>
             <ul class="nav">
@@ -45,7 +46,7 @@
     <!-- page header -->
     <header id="home" class="header">
         <div class="overlay"></div>
-        <div class="header-content container">
+        <div class="header-content container" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
             <h1 class="header-title">
                 <span class="up">HI!</span>
                 <span class="down">I am Anzori Sakhelashvili</span>
@@ -145,42 +146,88 @@
             </div>
     </section>
 
+    <section class="section">
+        <div class="container text-center">
+            <p class="section-subtitle">What are my skills?</p>
+            <h6 class="section-title mb-6">Skills</h6>
+
+            <div class="skills">
+                <div class="skill-card">
+                    <div class="skill-card-item">
+                        <img src="assets/skills/angular.png" alt="Angular">
+                        <h5>Angular</h5>
+                    </div>
+                    <div class="skill-card-item">
+                        <img src="assets/skills/Typescript.png" alt="TypeScript">
+                        <h5>TypeScript</h5>
+                    </div>
+                    <div class="skill-card-item">
+                        <img src="assets/skills/HTML5.png" alt="HTML">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="skill-card-item">
+                        <img src="assets/skills/css.png" alt="CSS">
+                        <h5>CSS</h5>
+                    </div>
+                    <div class="skill-card-item">
+                        <img src="assets/skills/Tailwind_CSS.png" alt="Tailwind CSS">
+                        <h5>Tailwind CSS</h5>
+                    </div>
+                    <div class="skill-card-item">
+                        <img src="assets/skills/JavaScript.png" alt="JavaScript">
+                        <h5>JavaScript</h5>
+                    </div>
+                    <div class="skill-card-item">
+                        <img src="assets/skills/Git.png" alt="Git">
+                        <h5>Git</h5>
+                    </div>
+                    <div class="skill-card-item">
+                        <img src="assets/skills/Node-js.png" alt="NodeJS">
+                        <h5>NodeJS</h5>
+                    </div>
+                    <div class="skill-card-item">
+                        <img src="assets/skills/mongo-db.png" alt="MongoDB">
+                        <h5>MongoDB</h5>
+                    </div>
+                </div>
+            </div>
+    </section>
+
     <!-- contact section -->
     <section class="section" id="contact">
         <div class="container text-center">
             <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
+            <h6 class="section-title">Contact Me</h6>
             <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+            <form action="" class="contact-form contactsection">
                 <div class="form-row">
-                    <div class="form-group col-sm-6">
+                    <div class="form-group">
                         <input type="text" size="50" class="form-control" placeholder="Your Name" required>
                     </div>
-                    <div class="form-group col-sm-6">
+                    <div class="form-group">
                         <input type="email" class="form-control" placeholder="Enter Email" requried>
                     </div>
-                    <div class="form-group col-sm-12">
+                    <div class="form-group txt">
                         <textarea name="comment" id="comment" rows="6" class="form-control"
                             placeholder="Write Something"></textarea>
                     </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    <div class="form-group">
+                        <input type="submit" value="Send Message" class="btn">
                     </div>
                 </div>
-            </form><!-- end of contact form -->
-        </div><!-- end of container -->
+            </form>
+        </div>
     </section>
 
     <!-- footer -->
     <div class="container">
         <footer class="footer">
-            <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            <div class="social-links">
+                <a href="https://www.facebook.com/Sakhelashvilii1"><i class="fa-brands fa fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/in/anzori-sakhelashvili/"><i
+                        class="fa-brands fa fa-linkedin"></i></i></a>
+                <a href="https://github.com/Anzori-PR"><i class="fa-brands fa fa-github"></i></a>
+                <a href="https://www.instagram.com/a.sakhelashvili/"><i class="fa-brands fa fa-instagram"></i></a>
             </div>
         </footer>
     </div>
