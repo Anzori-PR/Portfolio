@@ -8,6 +8,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Baloo Paaji' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kalnia:wght@500&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript"> emailjs.init('3GL3axZMNSY9R-tl0') </script>
     <title>Anzori Sakhelashvili</title>
 </head>
 
@@ -24,10 +30,10 @@
                     <a class="link" href="#about">About</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#portfolio">Projects</a>
+                    <a class="link" href="#projects">Projects</a>
                 </li>
                 <li class="item">
-                    <a class="link" href="#testmonial">Skills</a>
+                    <a class="link" href="#skills">Skills</a>
                 </li>
                 <li class="item">
                     <a class="link" href="#contact">Contact</a>
@@ -58,7 +64,7 @@
     </header>
 
     <!-- about section -->
-    <section class="section pt-0" id="about">
+    <section class="section" id="about">
         <!-- container -->
         <div class="container text-center">
             <!-- about wrapper -->
@@ -76,83 +82,44 @@
                         interfaces and cross-device compatibility. I am motivated to build efficient
                         solutions and continuously take on new challenges to grow as a developer.
                     </p>
-                    <button class="downloadbtn">Download CV</button>
+                    <a href="./assets/Anzori-Sakhelashvili_CV.pdf" download class="downloadbtn">Download CV</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects section -->
-    <section class="section" id="portfolio">
+    <section class="section" id="projects">
         <div class="container text-center">
             <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-6">Projects</h6>
+            <h6 class="section-title">Projects</h6>
 
-            <div class="scroll-wrapper">
-                <button class="leftscroll">
-                    <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor"
-                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M15.75 19.5 8.25 12l7.5-7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </button>
 
-                <div class="project-scroll-container">
-                    <div class="project-scroll-track" id="scroll-track">
-                        <div class="project-card">
-                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 1">
-                            <h5>Project 1</h5>
-                            <p>Short description...</p>
-                        </div>
-                        <div class="project-card">
-                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 2">
-                            <h5>Project 2</h5>
-                            <p>Short description...</p>
-                        </div>
-                        <div class="project-card">
-                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 2">
-                            <h5>Project 2</h5>
-                            <p>Short description...</p>
-                        </div>
-                        <div class="project-card">
-                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 2">
-                            <h5>Project 2</h5>
-                            <p>Short description...</p>
-                        </div>
-                        <div class="project-card">
-                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 2">
-                            <h5>Project 2</h5>
-                            <p>Short description...</p>
-                        </div>
-                        <div class="project-card">
-                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 2">
-                            <h5>Project 2</h5>
-                            <p>Short description...</p>
-                        </div>
-                        <div class="project-card">
-                            <img src="assets/project/Screenshot 2025-04-28 183916.png" alt="Project 2">
-                            <h5>Project 2</h5>
-                            <p>Short description...</p>
-                        </div>
-                        <!-- Add more cards -->
-                    </div>
-                </div>
-
-                <button class="rightscroll">
-                    <svg data-slot="icon" aria-hidden="true" fill="none" stroke-width="1.5" stroke="currentColor"
-                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m8.25 4.5 7.5 7.5-7.5 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </button>
+            <div class="projects-grid">
+                <!-- Data From Backend {app.js}  -->
             </div>
     </section>
 
-    <section class="section">
+    <!-- skills -->
+    <section class="section" id="skills">
         <div class="container text-center">
             <p class="section-subtitle">What are my skills?</p>
             <h6 class="section-title mb-6">Skills</h6>
 
             <div class="skills">
                 <div class="skill-card">
+                    <div class="skill-card-item">
+                        <img src="assets/skills/html.png" alt="HTML">
+                        <h5>HTML</h5>
+                    </div>
+                    <div class="skill-card-item">
+                        <img src="assets/skills/css.svg" alt="CSS">
+                        <h5>CSS</h5>
+                    </div>
+                    <div class="skill-card-item">
+                        <img src="assets/skills/JavaScript.png" alt="JavaScript">
+                        <h5>JavaScript</h5>
+                    </div>
                     <div class="skill-card-item">
                         <img src="assets/skills/angular.png" alt="Angular">
                         <h5>Angular</h5>
@@ -162,32 +129,20 @@
                         <h5>TypeScript</h5>
                     </div>
                     <div class="skill-card-item">
-                        <img src="assets/skills/HTML5.png" alt="HTML">
-                        <h5>HTML</h5>
+                        <img src="assets/skills/Node-js.png" alt="NodeJS">
+                        <h5>NodeJS</h5>
                     </div>
                     <div class="skill-card-item">
-                        <img src="assets/skills/css.png" alt="CSS">
-                        <h5>CSS</h5>
+                        <img src="assets/skills/mongodb.svg" alt="MongoDB">
+                        <h5>MongoDB</h5>
                     </div>
                     <div class="skill-card-item">
                         <img src="assets/skills/Tailwind_CSS.png" alt="Tailwind CSS">
                         <h5>Tailwind CSS</h5>
                     </div>
                     <div class="skill-card-item">
-                        <img src="assets/skills/JavaScript.png" alt="JavaScript">
-                        <h5>JavaScript</h5>
-                    </div>
-                    <div class="skill-card-item">
                         <img src="assets/skills/Git.png" alt="Git">
                         <h5>Git</h5>
-                    </div>
-                    <div class="skill-card-item">
-                        <img src="assets/skills/Node-js.png" alt="NodeJS">
-                        <h5>NodeJS</h5>
-                    </div>
-                    <div class="skill-card-item">
-                        <img src="assets/skills/mongo-db.png" alt="MongoDB">
-                        <h5>MongoDB</h5>
                     </div>
                 </div>
             </div>
@@ -199,22 +154,23 @@
             <p class="section-subtitle">How can you communicate?</p>
             <h6 class="section-title">Contact Me</h6>
             <!-- contact form -->
-            <form action="" class="contact-form contactsection">
+            <form action="" class="contact-form contactsection" id="form">
                 <div class="form-row">
                     <div class="form-group">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                        <input type="text" name="from_name" id="from_name" size="50" class="form-control" placeholder="Your Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Enter Email" requried>
+                        <input type="email" name="from_email" id="from_email" class="form-control" placeholder="Enter Email" requried>
                     </div>
                     <div class="form-group txt">
-                        <textarea name="comment" id="comment" rows="6" class="form-control"
+                        <textarea name="message" id="message" id="comment" rows="6" class="form-control"
                             placeholder="Write Something"></textarea>
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="Send Message" class="btn">
+                        <input type="submit" value="Send Message" class="btn" id="submit">
                     </div>
                 </div>
+                <span id="response"></span>
             </form>
         </div>
     </section>
