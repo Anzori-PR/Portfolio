@@ -1,12 +1,14 @@
 AOS.init(
-  {once: true}
+  { once: true }
 );
 
 
 const navbar = document.querySelector('.custom-navbar');
+const navbarLinksContainer = document.querySelector('.nav');
 const navbarLogo = document.querySelector('.logo');
 const navbarLinks = document.querySelectorAll('.link');
 const burgerm = document.querySelector('.burgerm');
+const closebtn = document.querySelector('.closebtn');
 const navbarHeight = 20;
 
 window.addEventListener('scroll', () => {
@@ -27,6 +29,20 @@ window.addEventListener('scroll', () => {
   }
 });
 
+
+burgerm.addEventListener('click', () => {
+  navbarLinksContainer.classList.toggle('activeburger');
+});
+
+closebtn.addEventListener('click', () => {
+  navbarLinksContainer.classList.remove('activeburger');
+});
+
+navbarLinks.forEach(click => {
+  click.addEventListener('click', () => {
+    navbarLinksContainer.classList.remove('activeburger');
+  });
+});
 
 const projects = [
   {
@@ -102,24 +118,24 @@ const submitBtn = document.getElementById('submit');
 const response = document.getElementById('response');
 
 document.getElementById('form')
- .addEventListener('submit', function(event) {
-   event.preventDefault();
+  .addEventListener('submit', function (event) {
+    event.preventDefault();
 
-   submitBtn.value = 'Sending...';
+    submitBtn.value = 'Sending...';
 
-   const serviceID = 'default_service';
-   const templateID = 'template_2fm4ume';
+    const serviceID = 'default_service';
+    const templateID = 'template_2fm4ume';
 
-   emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      submitBtn.value = 'Send Email';
-      response.innerHTML = 'Email sent successfully!';
-      form.reset();
-      setTimeout(() => {
-        response.innerHTML = '';
-      }, 3000);
-    }, (err) => {
-      submitBtn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
+    emailjs.sendForm(serviceID, templateID, this)
+      .then(() => {
+        submitBtn.value = 'Send Email';
+        response.innerHTML = 'Email sent successfully!';
+        form.reset();
+        setTimeout(() => {
+          response.innerHTML = '';
+        }, 3000);
+      }, (err) => {
+        submitBtn.value = 'Send Email';
+        alert(JSON.stringify(err));
+      });
+  });
